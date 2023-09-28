@@ -12,7 +12,7 @@ dbConnection();
 
 const PORT = process.env.PORT;
 
-app.use("/api/v1/", productRoute);
+app.use("/api/v1", productRoute);
 
 app.listen(PORT, () => {
   console.log(`Server running on port: ${PORT}`);
